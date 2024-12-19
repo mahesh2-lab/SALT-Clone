@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif !important;
+}
+html {
+  font-family: "Inter", sans-serif !important;
+}
+
+
+ p {
+    color: #475569;
+}
+.mega-menu {
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Delay visibility hiding by 300ms */
+}
+
+.hoverable {
+  position: static;
+}
+
+.hoverable:hover .arrow {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.hoverable:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s; /* No delay for visibility on hover */
+}
+
+.mega-menu:hover .arrow {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+/* secord mega menu */
+
+.mega-menu1 {
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Delay visibility hiding by 300ms */
+}
+
+.hoverable1 {
+  position: static;
+}
+
+.hoverable1:hover .arrow1 {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.hoverable1:hover .mega-menu1 {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s; /* No delay for visibility on hover */
+}
+
+.mega-menu1:hover .arrow1 {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
